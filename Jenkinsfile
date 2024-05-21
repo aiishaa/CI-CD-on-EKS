@@ -1,9 +1,9 @@
 pipeline {
-   agent {
-     kubernetes {
+  agent {
+    kubernetes {
        yamlFile 'K8s-manifests/k8sPodTemplate.yml' 
-     }
-   }
+    }
+  }
   stages {
         stage('Depolying on EKS cluster') {
           steps {

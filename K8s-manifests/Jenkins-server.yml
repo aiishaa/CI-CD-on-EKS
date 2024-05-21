@@ -41,10 +41,10 @@ rules:
   verbs: ["create","delete","get","list","update","watch"]
 - apiGroups: ["apps"]
   resources: ["deployments"]
-  verbs: ["get", "list", "watch"]
+  verbs: ["create","delete","get","list","patch","update","watch"]
 - apiGroups: [""] # Empty string for core API group
   resources: ["services"]
-  verbs: ["get", "list", "watch"]
+  verbs: ["create","delete","get","list","patch","update","watch"]
   
 ---
 apiVersion: rbac.authorization.k8s.io/v1

@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: kareemelkasaby/bakehouseitisohag:v9
+        image: public.ecr.aws/h7n3l7r1/jenkins-ecr:nodeapp
         resources:
           limits:
             memory: "128Mi"
